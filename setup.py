@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="cudatiger",
+    name="progressive-neural-architecture-search-torch",
     version="0.0.1", 
     description="A PyTorch implementation of Progressive Neural Architecture Search. https://arxiv.org/pdf/1712.00559.pdf",
     long_description=open("README.md", "r").read(),
