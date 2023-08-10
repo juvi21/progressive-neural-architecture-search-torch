@@ -37,9 +37,7 @@ for epoch in range(2):
 ```bibtex
 @misc{liuprogressive,
   title={Progressive Neural Architecture Search},
-  author={Liu, Chenxi and Zoph, Barret and Neumann, Maxim and Shlens, Jonathon and Hua, Wei and Li, Li-Jia and Fei-Fei, Li and Yuille, Alan and Huang, Jonathan and Murphy, Kevin},
-  year={2017},
-  month={December},
+  author={Liu, Chenxi and Zoph, Barret and Neumann, Maxim and Shlens, Jonathon and Hua, Wei and Li, Li-Jia and Fei-Fei, Li and Yuille, Alan and Huang, Jonathan and Murphy, Kevin},,
   note={arXiv preprint arXiv:1712.00559},
   howpublished={\url{https://arxiv.org/pdf/1712.00559.pdf}},
 }
