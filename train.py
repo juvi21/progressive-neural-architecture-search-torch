@@ -10,7 +10,7 @@ from tqdm import tqdm
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-dataset_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data/data_new')
+dataset_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data')
 
 
 def mytransform(img: Image.Image) -> Image.Image:
@@ -70,7 +70,6 @@ def main():
     lr = 1e-5
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
 
-    m = nn.LogSoftmax(dim=1).to(device)
     loss_fn = nn.NLLLoss().to(device)
 
     model.train()
@@ -78,15 +77,6 @@ def main():
         train_one_epoch(model, optimizer, train_loader, loss_fn)
 
     sample_input, _ = next(iter(train_loader))
-    sample_out = model(sample_input.to(device))
-
-    fixture = torch.tensor([
-        [-0.6241,  1.2502,  1.1059, -0.6813, 0.8837],
-        [1.3981,  0.7711, -0.3744,  0.6056, -0.7757],
-        [0.2892, -0.0913, -0.3163,  0.9425, -0.7759],
-        [-0.1292,  1.3259, -0.1468,  0.0087,  0.3588]
-    ], device=device)
-
 
 if __name__ == "__main__":
     main()
