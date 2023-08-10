@@ -9,11 +9,12 @@ Unofficial PyTorch implementation of Progressive Neural Architecture Search. htt
 - [ ] Push PyPi
 - [ ] Better and easier data cleaning
 - [ ] Better README
+- [ ] Add requirements.txt
 
 ## USAGE
 1. Download and clean animal-10 Dataset with SEE: [clean_data.py](utils/clean_data.py)
 
-SEE: [train.py](train.py)
+2. SEE: [train.py](train.py)
 
 ```python
 import torch
