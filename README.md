@@ -4,7 +4,7 @@ Unofficial PyTorch implementation of Progressive Neural Architecture Search. htt
 <img src="assets/architecturePNAS.png" alt="architecturePNAS" width="600"/>
 
 
-### To do:
+## ToDo
 - [ ] Add Unittests
 - [ ] Push PyPi
 - [ ] Better and easier data cleaning
@@ -32,3 +32,17 @@ model.train()
 for epoch in range(2):
     train_one_epoch(model, optimizer, train_loader, loss_fn)
 ```
+## Citations
+**Paper:**
+```bibtex
+@misc{liuprogressive,
+  title={Progressive Neural Architecture Search},
+  author={Liu, Chenxi and Zoph, Barret and Neumann, Maxim and Shlens, Jonathon and Hua, Wei and Li, Li-Jia and Fei-Fei, Li and Yuille, Alan and Huang, Jonathan and Murphy, Kevin},
+  year={2017},
+  month={December},
+  note={arXiv preprint arXiv:1712.00559},
+  howpublished={\url{https://arxiv.org/pdf/1712.00559.pdf}},
+}
+```
+**Dataset:**
+Animal-10 on [kaggle](https://www.kaggle.com/datasets/alessiocorrado99/animals10)
